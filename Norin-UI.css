@@ -1,0 +1,88 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Font-family;
+    border: solid 0px ;
+}
+  
+@font-face {
+    font-family: Font-family;
+    src: url(../Norin-UI/Segoe\ UI.ttf);
+}
+
+button {
+    background-color: rgb(223, 223, 223);
+    border: none;
+    padding: 10px;
+    color: rgb(131, 131, 131);
+    outline: none;
+    font-size: 13px;
+    cursor: pointer;
+    transition: ease-in-out 75ms;
+    user-select: none;
+}
+
+.button-default {
+    background-color: rgb(223, 223, 223);
+    color: rgb(131, 131, 131);
+    width: 130px;
+}
+
+.button-red {
+    background-color: rgb(255, 43, 43);
+    color: rgb(255, 255, 255);
+    width: 130px;
+}
+
+.drop-down {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-down > button {
+    width: 150px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.drop-down > button > span{
+    margin-left: 115px;
+    font-size: 15px;
+    position: fixed;
+}
+
+.drop-down > .content {
+    display: none;
+}
+
+.drop-down > .content > a {
+    text-decoration: none;
+    color: rgb(131, 131, 131);
+    font-size: 15px;
+    display: block;
+    background-color: rgb(219, 219, 219);
+    padding: 10px;
+}
+
+/*--Animation--*/
+
+button:hover {
+    background-color: rgb(185, 185, 185);
+    color: rgb(87, 87, 87);
+}
+
+.button-default:hover {
+    background-color: rgb(185, 185, 185);
+    color: rgb(87, 87, 87);
+}
+
+.button-red:hover {
+    background-color: rgb(218, 20, 20);
+    color: rgb(255, 255, 255);
+}
+
+.drop-down > .content > a:hover {
+    background-color: rgb(204, 204, 204);
+    color: rgb(87, 87, 87);
+}
